@@ -9,14 +9,10 @@ void displayCount(int arr[], int n)
     for (int i = 0; i < n; i++)
     {
         if (arr[i] == 0)
-        {
             count0++;
-        }
 
         if (arr[i] == 1)
-        {
             count1++;
-        }
     }
 
     cout << "number of zeroes-> " << count0 << endl;

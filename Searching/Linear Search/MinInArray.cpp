@@ -8,9 +8,7 @@ int MinElem(int arr[], int n)
     for (int i = 0; i < n; i++)
     {
         if (arr[i] < mini)
-        {
             mini = arr[i];
-        }
     }
 
     return mini;

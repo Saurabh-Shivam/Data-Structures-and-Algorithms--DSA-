@@ -13,7 +13,7 @@ int main()
     // taking input in vector
     vector<int> arr(n);
     cout << "Enter the elements of array:" << endl;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < arr.size(); i++)
     {
         cin >> arr[i];
     }

@@ -16,7 +16,11 @@ void reverseArray(int arr[], int n)
 
     while (start <= end)
     {
-        swap(arr[start], arr[end]);
+        // swapping in array
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+
         start++;
         end--;
     }

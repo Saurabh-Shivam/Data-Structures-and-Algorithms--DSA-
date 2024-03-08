@@ -20,11 +20,20 @@ void display(vector<int> arr)
     }
 }
 
-// TODO: Solve this by removing the duplicate elements from the array
+// solved this by removing the duplicate elements from the array
+// here no extra data structure is used
 // Time Complexity -> O(n)
 // Space Complexity -> O(min(arr, brr, crr))
 void commonElements(vector<int> arr, vector<int> brr, vector<int> crr)
 {
+
+    // removing duplicate numbers from the array
+    for (int i = 0; i < arr.size() - 1; i++)
+    {
+        if (arr[i] == arr[i + 1])
+            arr[i] *= -1;
+    }
+
     vector<int> ans;
     int i = 0, j = 0, k = 0;
     while (i < arr.size() && j < brr.size() && k < crr.size())

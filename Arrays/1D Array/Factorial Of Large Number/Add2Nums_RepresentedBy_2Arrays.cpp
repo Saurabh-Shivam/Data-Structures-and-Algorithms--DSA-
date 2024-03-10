@@ -6,7 +6,7 @@
 #include <algorithm>
 using namespace std;
 
-// TODO: Problem in this code fix this
+// TODO: Problem in this code fix this as output is not correct
 void calcSum(vector<int> arr, vector<int> brr)
 {
     int carry = 0;

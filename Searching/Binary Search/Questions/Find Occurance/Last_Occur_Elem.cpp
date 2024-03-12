@@ -1,9 +1,10 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 // Time Complexity -> O(log n)
-int firstOccurElem(vector<int> arr, int target)
+int lastOccurElem(vector<int> arr, int target)
 {
     int index = -1;
     int start = 0;
@@ -12,11 +13,11 @@ int firstOccurElem(vector<int> arr, int target)
 
     while (start <= end)
     {
-        // store the answer in index and serach left side
+        // store the answer in index and serach right side
         if (arr[mid] == target)
         {
             index = mid;
-            end = mid - 1;
+            start = mid + 1;
         }
         // serach right side
         else if (arr[mid] < target)
@@ -47,8 +48,10 @@ int main()
     cout << "Enter the target element: ";
     cin >> target;
 
-    int result = firstOccurElem(arr, target);
-
+    int result = lastOccurElem(arr, target);
+    cout << "The last occurance of the element " << target << " is at index " << result << endl;
+    // using stl function
+    auto result2 = upper_bound(arr.begin(), arr.end(), target);
     cout << "The first occurance of the element " << target << " is at index " << result;
 
     return 0;

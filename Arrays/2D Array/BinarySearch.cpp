@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+// Time Complexity -> O(log n)
 bool binarySearch(vector<vector<int>> arr, int target)
 {
     int rows = arr.size();

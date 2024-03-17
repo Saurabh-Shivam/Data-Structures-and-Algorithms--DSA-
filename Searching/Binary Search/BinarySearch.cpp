@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// Time Complexity -> O(log n)
 int binarySearch(int arr[], int n, int key)
 {
     int start = 0;

@@ -50,6 +50,8 @@ int findDuplicate(vector<int> &nums)
         swap(nums[0], nums[nums[0]]);
 
     return nums[0];
+
+    // TODO: Need to solve this problem without changing the actual array
 }
 
 int main()

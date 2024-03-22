@@ -2,6 +2,8 @@
 #include <vector>
 using namespace std;
 
+// Time Complexity: O(log n)
+// Space Complexity: O(1)
 vector<int> searchRange(vector<int> &nums, int target)
 {
     vector<int> ans;

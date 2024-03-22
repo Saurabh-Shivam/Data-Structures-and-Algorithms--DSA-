@@ -8,7 +8,7 @@ vector<int> twoSum(vector<int> &nums, int target)
     // Time Complexity: O(n^2)
     // Space Complexity: O(1)
     int n = nums.size();
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < n; i++)
     {
         for (int j = i + 1; j < n; j++)
         {

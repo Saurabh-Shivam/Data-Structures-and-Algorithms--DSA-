@@ -8,7 +8,7 @@ using namespace std;
 // Space Complexity -> O(n)
 int findDuplicate(vector<int> arr)
 {
-    sort(arr.begin(), arr.end() - 1);
+    sort(arr.begin(), arr.end());
     int ans = -1;
 
     for (int i = 0; i < arr.size(); i++)

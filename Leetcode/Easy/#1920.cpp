@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
- // TODO: Optimise the code to O(1) Space Complexity
+// TODO: Optimise the code to O(1) Space Complexity
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 vector<int> buildArray(vector<int> &nums)

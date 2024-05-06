@@ -18,7 +18,7 @@ vector<int> twoSum(vector<int> &nums, int target)
             }
         }
     }
-    // if no sum pair is found
+    // return this if no sum pair is found 
     return {};
 }
 int main()

@@ -24,6 +24,7 @@ void bubbleSort(vector<int> arr)
             }
         }
 
+        // optimising the code if the array is already sorted before the complete traversal of first loop
         if (swapCount == false)
             break;
     }

@@ -29,7 +29,7 @@ void spiralPrintMatrix(vector<vector<int>> arr)
     while (count < total_elements)
     {
         // print startingRow
-        for (int i = startingRow; i <= endingCol && count < total_elements; i++)
+        for (int i = startingCol; i <= endingCol && count < total_elements; i++)
         {
             // ans.push_back(arr[startingRow][i]);
             cout << arr[startingRow][i] << " ";
@@ -48,7 +48,7 @@ void spiralPrintMatrix(vector<vector<int>> arr)
         endingCol--;
 
         // print endingRow
-        for (int i = endingRow; i >= startingCol && count < total_elements; i--)
+        for (int i = endingCol; i >= startingCol && count < total_elements; i--)
         {
             // ans.push_back(arr[endingRow][i]);
             cout << arr[endingRow][i] << " ";

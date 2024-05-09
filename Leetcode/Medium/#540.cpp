@@ -29,7 +29,7 @@ public:
             {
                 if (arr[mid] == arr[mid - 1])
                     start = mid + 1;
-                else
+                else   
                     end = mid - 1;
             }
 
